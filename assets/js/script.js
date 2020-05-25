@@ -34,31 +34,37 @@ function timer() {
 }
 
 //questions
-    var question1 = function(){
+
+    function question1(){
         
         a1.textContent = "filler 1"
         a2.textContent = "filler 1"
         a3.textContent = "filler 1"
         a4.textContent = "filler 1"
 
-        submitBtn.addEventListener("click", function(){
+        submitBtn.addEventListener("click", function questionOneEvent(event){
+            event.preventDefault();
             if(answer1.checked){
                 alert("Correct!")
-                score + 1;
+                score = score + 1;
                 question2();
+                submitBtn.removeEventListener("click",question1())
                 return;
+
             }
             else{
                 alert("Wrong!")
                 timeLeft = timeLeft - 5;
                 question2();
+                submitBtn.removeEventListener("click",question1())
                 return;
             }
         })
-      
+
     }
 
-    var question2 = function(){
+
+    function question2(){
         a1.textContent = "filler 2"
         a2.textContent = "filler 2"
         a3.textContent = "filler 2"
@@ -67,7 +73,7 @@ function timer() {
         submitBtn.addEventListener("click", function(){
             if(answer3.checked){
                 alert("Correct!")
-                score + 1;
+                score = score + 1;
                 question3();
                 return;
             }
@@ -80,7 +86,7 @@ function timer() {
         })
     }
     
-    var question3 = function(){
+    function question3(){
         a1.textContent = "filler 3"
         a2.textContent = "filler 3"
         a3.textContent = "filler 3"
@@ -89,7 +95,7 @@ function timer() {
         submitBtn.addEventListener("click", function(){
             if(answer2.checked){
                 alert("Correct!")
-                score + 1;
+                score = score + 1;
                 question4();
                 return;
             }
@@ -102,7 +108,7 @@ function timer() {
         })
     }
     
-    var question4 = function(){
+    function question4(){
         a1.textContent = "filler 4"
         a2.textContent = "filler 4"
         a3.textContent = "filler 4"
@@ -111,7 +117,7 @@ function timer() {
         submitBtn.addEventListener("click", function(){
             if(answer4.checked){
                 alert("Correct!")
-                score + 1;
+                score = score + 1;
                 question5();
                 return;
             }
@@ -124,7 +130,7 @@ function timer() {
         })
     }
 
-    var question5 = function(){
+    function question5(){
         a1.textContent = "filler 5"
         a2.textContent = "filler 5"
         a3.textContent = "filler 5"
@@ -133,7 +139,7 @@ function timer() {
         submitBtn.addEventListener("click", function(){
             if(answer3.checked){
                 alert("Correct!")
-                score + 1;
+                score = score + 1;
                 endGame();
                 return;
             }
@@ -153,3 +159,6 @@ startBtn.addEventListener("click", function(timez) {
     question1();
 });
 
+
+
+var questions = [question1, question2, question3, question4, question5]
