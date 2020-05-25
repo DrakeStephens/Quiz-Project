@@ -4,42 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link ref="stylesheet" href="assets/css/style.css">
+    <title>Quiz Project</title>
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>Javascript Quiz</h1>
-        <button id="start-button">Start</button>
-    </header>
-    <main>
-        <div class="answer-grid-container">
-            <div class="answer">
-                <input type="radio" id="answer1" name="answer" value="n/a"></input>
-                <label id="a1" for="answer1">filler</label><br>
+    <div class="container">
+        <div id="questions" class="hide">
+            <div id="question">Question</div>
+            <div id="answerButtons" class="btn-grid">
+                <button class="btn hide">Answer 1</button>
+                <button class="btn hide">Answer 2</button>
+                <button class="btn hide">Answer 3</button>
+                <button class="btn hide">Answer 4</button>
             </div>
-                
-            <div class="answer">
-                <input type="radio" id="answer2" name="answer" value="n/a"></input>
-                <label id="a2" for="answer2">filler</label><br>
-            </div>
-                
-            <div class="answer">
-                <input type="radio" id="answer3" name="answer" value="n/a"></input>
-                <label id="a3" for="answer3">filler</label><br>
-                
-            </div>
-                
-            <div class="answer">
-                <input type="radio" id="answer4" name="answer" value="n/a"></input>
-                <label id="a4" for="answer4">filler</label><br>
-            </div>
-            <button id="SUBMIT">SUBMIT</button>
-            <h2 id="wrong/right">ddd</h2>
-        </div> 
-    </main>
-    <script src="assets/js/script.js"></script>
+        </div>
+        <div class="ns-btns">
+        <button id="start-btn" class="start-btn btn">Start</button>
+        <button id="next-btn" class="next-btn btn hide">next</button>
+        </div>
+    </div>
+    <script defer src="assets/js/script.js"></script>
 </body>
 
 </html>
