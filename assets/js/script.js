@@ -147,7 +147,7 @@ var questions = [
     {
         question: "Good Job!!!!!!!!!",
             answers:[
-                {text: "Finish!!!!!"}
+                {text: "Finish!!!!!", correct: false}
             ] 
     }
 ]
