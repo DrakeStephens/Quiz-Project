@@ -109,8 +109,8 @@ var questions = [
         answers: [
             {text: "function functionName();", correct: false},
             {text: "var functionName = function();", correct: false},
-            {text: "let functionName = function();", correct: true},
-            {text: "(funtion);", correct: false}
+            {text: "let functionName = function();", correct: false},
+            {text: "(function);", correct: true}
 
         ]
     },
