@@ -137,10 +137,10 @@ var questions = [
     {
         question: "Question 5: Is coding fun? ",
         answers: [
-            {text: "filler5", correct: true},
-            {text: "filler5", correct: true},
-            {text: "filler5", correct: true},
-            {text: "filler5", correct: true}
+            {text: "yes", correct: true},
+            {text: "yeah", correct: true},
+            {text: "no", correct: false},
+            {text: "for sure", correct: true}
 
         ]
     },  
