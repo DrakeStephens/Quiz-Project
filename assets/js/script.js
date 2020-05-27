@@ -127,10 +127,10 @@ var questions = [
     {
         question: "Question 4: Arrays must be contained in which of the following? ",
         answers: [
-            {text: "[]", correct: false},
-            {text: "''", correct: true},
-            {text: "()", correct: false},
-            {text: "{}", correct: false}
+            {text: "' '", correct: false},
+            {text: "[ ]", correct: true},
+            {text: "( )", correct: false},
+            {text: "{ }", correct: false}
 
         ]
     },
