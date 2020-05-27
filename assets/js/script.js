@@ -95,52 +95,52 @@ function clearStatusClass(element) {
 }
 var questions = [
     {
-        question: "filler1",
+        question: "Question 1: Which of these is not a data type? ",
         answers: [
-            {text: "filler1", correct: true},
-            {text: "filler1", correct: false},
-            {text: "filler1", correct: false},
-            {text: "filler1", correct: false}
+            {text: "Word", correct: true},
+            {text: "String", correct: false},
+            {text: "Boolean", correct: false},
+            {text: "Integer", correct: false}
 
         ]
     },
     {
-        question: "filler2",
+        question: "Question 2: Which of these is not a type of way to define a function?",
         answers: [
-            {text: "filler2", correct: true},
-            {text: "filler2", correct: false},
-            {text: "filler2", correct: false},
-            {text: "filler2", correct: false}
+            {text: "function functionName();", correct: false},
+            {text: "var functionName = function();", correct: false},
+            {text: "let functionName = function();", correct: true},
+            {text: "(funtion);", correct: false}
 
         ]
     },
     {
-        question: "filler3",
+        question: "Question 3: Which of these is not a method of adding a class? ",
         answers: [
-            {text: "filler3", correct: true},
-            {text: "filler3", correct: false},
-            {text: "filler3", correct: false},
-            {text: "filler3", correct: false}
+            {text: "$('p:first').addClass('class');", correct: false},
+            {text: "element.className = 'class' ", correct: false},
+            {text: "element.classList.add('classl')", correct: false},
+            {text: "element.addClass('class')", correct: true}
 
         ]
     },
     {
-        question: "filler4",
+        question: "Question 4: Arrays must be contained in which of the following? ",
         answers: [
-            {text: "filler4", correct: true},
-            {text: "filler4", correct: false},
-            {text: "filler4", correct: false},
-            {text: "filler4", correct: false}
+            {text: "[]", correct: false},
+            {text: "''", correct: true},
+            {text: "()", correct: false},
+            {text: "{}", correct: false}
 
         ]
     },
     {
-        question: "filler5",
+        question: "Question 5: Is coding fun? ",
         answers: [
             {text: "filler5", correct: true},
-            {text: "filler5", correct: false},
-            {text: "filler5", correct: false},
-            {text: "filler5", correct: false}
+            {text: "filler5", correct: true},
+            {text: "filler5", correct: true},
+            {text: "filler5", correct: true}
 
         ]
     },  
